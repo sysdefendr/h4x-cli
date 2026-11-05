@@ -123,9 +123,9 @@ h4x-cli scope-check -c "<client name>" -input-file <cidrs.txt> [options]
 > [!NOTE]
 > *Likelihood is a score from 0-100 estimating whether the public range is registered to or controlled by the named client.
 >
-> **If a reverse-DNS lookup isn't already cached, your resolver asks whoever holds the reverse-DNS records for that IP >range. That's usually the ISP or hosting provider, but some organizations run that themselves. So the query might reach a >DNS server the client (or a third party) operates.
+> **If a reverse-DNS lookup isn't already cached, your resolver asks whoever holds the reverse-DNS records for that IP range. That's usually the ISP or hosting provider, but some organizations run that themselves. So the query might reach a DNS server the client (or a third party) operates.
 >
->Even then, it's a normal public DNS lookup, the same kind that happens whenever anyone resolves a hostname. It doesn't >probe, scan or connect to any host in the range, and it's generally treated as passive recon or OSINT.
+Even then, it's a normal public DNS lookup, the same kind that happens whenever anyone resolves a hostname. It doesn't probe, scan or connect to any host in the range, and it's generally treated as passive recon or OSINT.
 >
 >If you want a stricter guarantee, turn off reverse DNS:
 >
