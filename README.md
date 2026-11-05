@@ -92,7 +92,7 @@ h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
 ---
 
 ## Scope Check
-#### Leverages ```dig``` and ```whois``` to passively** determine the likelihood that a CIDR range belongs to the intended target.
+#### Leverages ```dig``` and ```whois``` to passively** determine the likelihood* that a CIDR range belongs to the intended target.
 
 ### Usage
 
