@@ -100,7 +100,7 @@ h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
 h4x-cli scope-check -c "<client name>" -input-file <cidrs.txt> [options]
 ```
 
-### Scope Check Required
+### Scope Check Required Options
 
 ```text
 -c, --client <name>          Client legal/common name
