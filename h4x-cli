@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+set -euo pipefail
+VERSION="0.4.1"
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+MODULE_DIR="${SCRIPT_DIR}/modules"
+usage() {
+cat <<USAGE
+h4x-cli v${VERSION}
+
+Usage:
+  h4x-cli <module> [options]
+
+Modules:
+  target-gen        Generate line-delimited lists of targets from nmap output
+  scope-check       Scope checker that passively checks domain ownership from CIDR ranges (external)
+  comment-scraper   Extract comments from web pages and common web application files
+
+Global options:
+  -h, --help        Show this help menu
+  -v, --version     Show the installed version
+
+Run 'h4x-cli <module> --help' for module-specific usage.
+USAGE
+}
+[[ $# -gt 0 ]] || { usage; exit 1; }
+case "$1" in
+  -h|--help|help) usage; exit 0 ;;
+  -v|--version) echo "h4x-cli v${VERSION}"; exit 0 ;;
+esac
+MODULE="$1"; shift
+MODULE_PATH="${MODULE_DIR}/${MODULE}.sh"
+[[ -f "$MODULE_PATH" ]] || { echo "[!] Unknown module: ${MODULE}" >&2; echo >&2; usage >&2; exit 1; }
+exec bash "$MODULE_PATH" "$@"
