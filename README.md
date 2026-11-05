@@ -2,6 +2,11 @@
 
 Modular helper CLI for penetration testing.
 
+## Installation
+```text
+./install.sh
+```
+
 ## Modules
 
 | Module | Description |
