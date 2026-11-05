@@ -17,7 +17,7 @@ Modular helper CLI for penetration testing.
 
 ---
 
-## comment-scraper
+## Comment Scraper
 
 ### Usage
 
@@ -26,7 +26,7 @@ h4x-cli comment-scraper -u <url> [options]
 h4x-cli comment-scraper -input-file <urls.txt> [options]
 ```
 
-### Input
+### Comment Scraper Input
 
 ```text
 -u, --url <url>             URL to inspect (repeatable)
@@ -34,7 +34,7 @@ h4x-cli comment-scraper -input-file <urls.txt> [options]
                             Line-delimited URLs; blank lines and # comments are ignored
 ```
 
-### Options
+### Comment Scraper Options
 
 ```text
 --crawl-assets              Inspect same-origin linked web application files
@@ -55,7 +55,7 @@ h4x-cli comment-scraper -input-file <urls.txt> [options]
 
 ---
 
-## target-gen
+## Target File Generator
 
 ### Usage
 
@@ -64,7 +64,7 @@ h4x-cli target-gen -p <port>[/protocol] -input-file <scan.nmap> [--output-file <
 h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
 ```
 
-### Modes
+### Target File Generator Modes
 
 ```text
 -p, --port <port>           Generate a line-delimited target list for an open port
@@ -72,7 +72,7 @@ h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
                             and how many hosts have each port open
 ```
 
-### Input and output
+### Target File Generator Input and output
 
 ```text
 -i, -input-file, --input-file <file>
@@ -89,7 +89,7 @@ h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
 
 ---
 
-## scope-check
+## Scope Check
 
 ### Usage
 
@@ -97,14 +97,14 @@ h4x-cli target-gen --list-ports -input-file <scan.nmap> [--output-file <file>]
 h4x-cli scope-check -c "<client name>" -input-file <cidrs.txt> [options]
 ```
 
-### Required
+### Scope Check Required
 
 ```text
 -c, --client <name>          Client legal/common name
 -i, -input-file, --input-file <file>
 ```
 
-### Optional
+### Scope Check Options
 
 ```text
 -a, --alias <name>           Additional client name, brand, or subsidiary (repeatable)
