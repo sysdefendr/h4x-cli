@@ -18,6 +18,7 @@ Modular helper CLI for penetration testing.
 ---
 
 ## Comment Scraper
+#### Enter a URL and Comment Scraper will extract all detected source code comments for human review. Detects comments from HTML files, JS files, CSS, PHP comments and more. Save to a file or just read in stdout. Use ```text --crawl-assets``` to extract comments of same-origin linked app endpoints.
 
 ### Usage
 
