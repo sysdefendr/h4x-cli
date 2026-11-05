@@ -12,7 +12,7 @@ Modular helper CLI for penetration testing.
 | Module | Description |
 |---|---|
 | [`comment-scraper`](#comment-scraper) | Extract comments from web pages and common web application files |
-| [`target-gen`](#target-gen) | Generate line-delimited lists of targets from nmap output |
+| [`target-gen`](#target-file-generator) | Generate line-delimited lists of targets from nmap output |
 | [`scope-check`](#scope-check) | Scope checker that passively checks domain ownership from CIDR ranges (external) |
 
 ---
