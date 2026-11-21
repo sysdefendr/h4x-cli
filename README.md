@@ -1,4 +1,4 @@
-# h4x-cli v0.4.1
+# h4x-cli v0.5.0
 
 Modular helper CLI for penetration testing.
 
